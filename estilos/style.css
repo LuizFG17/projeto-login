@@ -105,13 +105,37 @@ form > a.botao > i {
 
 form > div.campo {
     background-color: #49a09d;
+    border: 2px solid #49a09d;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #6aebe6;
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    width: calc(100% - 45px);
+    transform: translatey(-14px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: 0px;
 }
